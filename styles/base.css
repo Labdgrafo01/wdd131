@@ -92,7 +92,7 @@ main {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr;
-    grid-column: ;
+    grid-column: 1/3;
     grid-column-gap: 20px;
     padding: 20px;
 }
