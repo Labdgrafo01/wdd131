@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
-    --heading-font: "Bree Serif", serif;
-    --paragraph-font: "Raleway", sans-serif;
+    --heading-font: "Amatic SC", serif;
+    --paragraph-font: "Mulish", sans-serif;
 
     --primary-background: black;
     --primary-accent: white;
 
-    --secondary-background: #99E1D9;
-    --secondary-accent: black;
+    --secondary-background: #ffbaff;
+    --secondary-accent: rgb(93, 48, 87);
 }
 
 *{
@@ -23,7 +23,7 @@ body{
     padding: 1rem;
     text-align: center;
     margin: 0 auto;
-    background-color: var(--primary-background);
+    
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -34,11 +34,11 @@ h1, h2, h3, h4, h5, h6{
 h1{
     text-align: left;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 h2{
-    color:var(--primary-accent);
+    color:var(--secondary-accent);
 }
 
 header{
@@ -46,9 +46,12 @@ header{
     color: var(--secondary-accent);
 }
 
+
 .navigation{
     display: flex;
     flex-direction: column;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
     list-style: none;
     align-items: center;
 }
@@ -66,28 +69,31 @@ header{
     text-decoration: underline;
 }
 
+#menu{
+  font-size: 1.5rem;
+  border:0;
+  background: none;
+  color: var(--secondary-accent);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  content: "☰";
+}
+
+#menu::before{
+  content: "☰";
+}
+
+#menu.open::before{
+  content: "❎";
+}
+
+
 .wrap{
     flex-wrap: wrap;
 }
 
-#menu{
-    font-size: 1.5rem;
-    border:0;
-    background: none;
-    color: var(--secondary-accent);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    content: "☰";
-}
 
-#menu::before{
-    content: "☰";
-}
-
-#menu.open::before{
-    content: "❎";
-}
 
 .open a{
     display: block;
@@ -101,10 +107,10 @@ header{
 }
 
 figure{
-    background-color: var(--primary-accent);
-    padding: 1rem;
     color: var(--primary-background);
+    background-color: var(--primary-accent);
     font-weight: bold;
+    padding: 1rem;
 }
 
 figure img{
@@ -115,12 +121,13 @@ figure img{
 
 figcaption{
     font-size:smaller;
-    padding: .75rem;
+    padding: .80rem;
 }
 
 footer{
-  background-color: #087A87;
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
+    background: var(--secondary-background);
+    color: var(--secondary-accent);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
 }

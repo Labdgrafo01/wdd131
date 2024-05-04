@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Establece el año de copyright en el primer párrafo del pie de página
     copyrightParagraph.textContent = "© " + currentYear + " Haydee De la Sota Gracia";
     // Cambia el color de texto del primer párrafo del pie de página
-    copyrightParagraph.style.color = "white";
+    copyrightParagraph.style.color = "purple";
     // Utiliza la misma tipografía que en tu HTML
     copyrightParagraph.style.fontFamily = window.getComputedStyle(document.body).fontFamily;
 
     // Obtiene la fecha de la última modificación del documento
     var lastModifiedDate = new Date(document.lastModified);
     // Establece la fecha de la última modificación en el segundo párrafo del pie de página
-    lastModifiedParagraph.textContent = "Última modificación: " + lastModifiedDate;
+    lastModifiedParagraph.textContent = "Last Modified Date: " + lastModifiedDate;
     // Cambia el color de texto del segundo párrafo del pie de página
-    lastModifiedParagraph.style.color = "yellow";
+    lastModifiedParagraph.style.color = "black";
     // Utiliza la misma tipografía que en tu HTML
     lastModifiedParagraph.style.fontFamily = window.getComputedStyle(document.body).fontFamily;
 });
