@@ -7,8 +7,8 @@
     --primary-background: black;
     --primary-accent: white;
 
-    --secondary-background: #ffbaff;
-    --secondary-accent: rgb(93, 48, 87);
+    --secondary-background: #b27ab2;
+    --secondary-accent: rgb(3, 3, 3);
 }
 
 *{
@@ -57,21 +57,21 @@ header{
 }
 
 .navigation a{
-    display: none;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-    color: var(--secondary-accent);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  color: var(--secondary-accent);
 }
 
 .navigation a:hover{
-    font-weight: 700;
-    text-decoration: underline;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 #menu{
   font-size: 1.5rem;
-  border:0;
+  border: 0;
   background: none;
   color: var(--secondary-accent);
   position: absolute;
@@ -96,7 +96,7 @@ header{
 
 
 .open a{
-    display: block;
+  display: block;
 }
 
 
